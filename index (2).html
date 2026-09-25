@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>InvestSim — Simulador educativo de inversiones</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="gate" class="gate">
+  <div class="gate-nav">
+    <div class="brand-lockup"><span class="logo-mark">▲</span> Invest<span class="accent">Sim</span></div>
+  </div>
+  <div class="gate-hero">
+    <div class="gate-copy">
+      <p class="eyebrow">APRENDE · PRACTICA · INVIERTE</p>
+      <h1>Invest<span class="accent">Sim</span></h1>
+      <h2>Simulador educativo<br>de inversiones</h2>
+      <p class="gate-lead">Explora el mundo de las acciones, aprende a invertir y pon en práctica tus habilidades financieras sin arriesgar dinero real.</p>
+      <div class="gate-form">
+        <input id="gate-nombre" type="text" placeholder="Escribe tu nombre para comenzar" autocomplete="off">
+        <button class="btn btn-primary" onclick="comenzar()">Comenzar →</button>
+      </div>
+      <div id="gate-msg"></div>
+    </div>
+  </div>
+  <div class="gate-features">
+    <div class="feature"><span class="feature-ic">🎓</span><b>Aprende</b><p>Conoce cómo funcionan las inversiones y el mercado de valores.</p></div>
+    <div class="feature"><span class="feature-ic">🛡️</span><b>Practica</b><p>Realiza compras y ventas de acciones con un capital virtual.</p></div>
+    <div class="feature"><span class="feature-ic">📊</span><b>Gestiona</b><p>Lleva el control de tu portafolio, revisa tu historial y analiza resultados.</p></div>
+    <div class="feature"><span class="feature-ic">🎯</span><b>Mejora</b><p>Toma decisiones, aprende de tus errores y construye tu estrategia.</p></div>
+  </div>
+</div>
+
+<div id="app" class="app hidden">
+  <aside class="sidebar">
+    <div class="brand-lockup"><span class="logo-mark">▲</span> Invest<span class="accent">Sim</span>
+      <small>Simulador educativo de inversiones</small>
+    </div>
+    <nav id="nav"></nav>
+    <button class="logout" onclick="cerrarSesion()">⏻ Cerrar sesión</button>
+  </aside>
+  <div class="main">
+    <header class="topbar" id="topbar"></header>
+    <div class="content" id="content"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
